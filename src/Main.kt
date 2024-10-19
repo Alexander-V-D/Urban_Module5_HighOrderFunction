@@ -9,6 +9,7 @@ fun main() {
             changeArray(arrayOf(1, 2, 3, 4, 5), change = ::increaseBy1).contentToString())
 }
 
+//Функции для задачи 1
 fun action(firstColor: String, secondColor: String, mix: (String, String) -> String): String {
     return mix(firstColor, secondColor)
 }
@@ -35,7 +36,9 @@ fun mixColors(firstColor: String, secondColor: String): String {
     }
 }
 
+//Функции для задачи 2
 fun increaseBy1(number: Int) = number + 1
+
 fun multiplyBy2(number: Int) = number * 2
 
 fun changeArray(array: Array<Int>, change: (Int) -> Int): Array<Int> {
